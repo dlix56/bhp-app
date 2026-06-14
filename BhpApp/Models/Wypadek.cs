@@ -22,8 +22,18 @@ namespace BhpApp.Models
         // czy wniosek
         public string Status { get; set; } = "Wniosek";
 
+        public string Strefa { get; set; } = string.Empty;
+
         // kto zgłosił
         public string? ZglaszajacyId { get; set; }
         public Pracownik? Zglaszajacy { get; set; }
+
+        public string? PoszkodowanyId { get; set; }
+        public Pracownik? Poszkodowany { get; set; }
+
+        public string? Zmiana { get; set; }
+
+        public DateTime? DataWypadku { get; set; }
+        public string? KomentarzPoszkodowanego { get; set; }
     }
 }
